@@ -1,11 +1,11 @@
 import { css, Global } from '@emotion/react';
+import { injectGlobal } from '@emotion/css';
 
 const style = css`
   :root {
     font-family: Pretendard, Inter, Helvetica, Arial, sans-serif;
     line-height: 1.5;
 
-    color: #452e72;
     background-color: #ed94a1;
 
     font-synthesis: none;
@@ -124,6 +124,32 @@ const style = css`
     border-collapse: collapse;
     border-spacing: 0;
   }
+`;
+
+injectGlobal`
+/* 잉크립퀴드체 */
+  @font-face {
+  font-family: 'InkLipquid';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 고운바탕 */
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 강원교육현옥샘체 */
+@font-face {
+    font-family: 'GangwonEduHyeonokT_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduHyeonokT_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 `;
 
 const GlobalStyle = () => {

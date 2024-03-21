@@ -12,7 +12,7 @@ export const mq = facepaint(
 //공통 width 값
 export const commonWidth = mq({
   width: ['100%', '100%', '100%', '992px'],
-  height: '100vh',
+  minHeight: '100vh',
   background: `${Common.colors.lightYellow}`,
   margin: '0 auto',
 });
